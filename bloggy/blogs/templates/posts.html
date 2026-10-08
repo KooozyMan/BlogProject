@@ -7,7 +7,7 @@ Posts
 {% block body %}
 <div class="grid">
     {% for post in posts %}
-    <a href="post/{{ post.id }}">
+    <a href="post/{{ post.id }}" style="text-decoration: none;">
         <div class="grid-item">
             <div class="title">{{ post.title }}</div>
             <div class="category">{{ post.category.name }}</div>
