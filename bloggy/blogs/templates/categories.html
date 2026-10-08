@@ -1,0 +1,13 @@
+{% extends 'master.html' %}
+
+{% block title %}
+Categories
+{% endblock %}
+
+{% block body %}
+{% for category in categories %}
+<a class="user" href="category/{{ category.id }}">
+    <div>{{ category.name }}</div>
+</a>
+{% endfor %}
+{% endblock %}

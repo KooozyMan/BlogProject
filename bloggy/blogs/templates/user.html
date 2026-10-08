@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+
+{% block title %}
+User {{ user.username }}
+{% endblock %}
+
+{% block body %}
+<div class="profile">
+    <div class="field">
+        Username: {{ user.username }}
+    </div>
+    <div class="field">
+        Email: {{ user.email }}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+header {
+    background-color: #2b2b2b;
+    height: 80px;
+    padding: 8px 8px 0 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav_links {
+    width: 750px;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.nav_link {
+    font-size: 22px;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+    border-bottom: 4px solid #e60023;
+    text-decoration: none;
+}

@@ -1,0 +1,32 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'blogs/img/logo_small.png' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/root.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/users.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/posts.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<header>
+    <div class="logo"><a href="{% url 'main' %}"><img src="{% static 'blogs/img/logo.png' %}" alt="Bloggy Logo"
+                height="64px"></a>
+    </div>
+    <nav class="nav_links">
+        <a class="nav_link" href="{% url 'main' %}">Main</a>
+        <a class="nav_link" href="{% url 'users' %}">Users</a>
+        <a class="nav_link" href="{% url 'categories' %}">Browse Categories</a>
+        <a class="nav_link" href="{% url 'posts' %}">Browse Posts</a>
+        <a class="nav_link" href="http://127.0.0.1:8000/admin/">Dashboard</a>
+    </nav>
+</header>
+
+<body>
+    <div class="container">{% block body %}{% endblock %}</div>
+</body>
+
+</html>
